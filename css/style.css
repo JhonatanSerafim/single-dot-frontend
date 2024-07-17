@@ -1,0 +1,105 @@
+:root {
+    --main-color: #06D6A0;
+  }
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container__left, .container__right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__left {
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.container__right {
+    background-color: #5c5c5c;
+    align-items: center;
+    padding: 5%;
+
+}
+
+.container__legend {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container__image {
+    width: 400px;
+    height: auto;
+}
+
+.form__card {
+    width: 540px;
+    height: 100%;
+    background-color: white;
+    border-radius: 16px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+
+   padding: 0px 70px;
+}
+
+.container__logo {
+    width: 200px;
+    height: auto;
+}
+
+.form__group {
+    width: 100%;
+}
+
+.form__label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    color: #5c5c5c;
+
+}
+
+.form__input {
+    width: auto;
+    padding: 8px;
+    border: 1px var(--main-color) solid;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form__button {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
