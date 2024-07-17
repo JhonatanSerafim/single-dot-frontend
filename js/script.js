@@ -1,3 +1,3 @@
-$('#button-login').on('click', function () { 
-  alert('processando informacoes para realizar o login...');
+$("#buttonLogin").on("click", function () {
+  alert("processando informacoes para realizar o login...");
 });
