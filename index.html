@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Dot - Registro de Ponto</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
     <main class="container">
-        <section class="container__left">
-            <p class="container__legend">Pontualidade e eficiência na palma da sua mão!</p>
-            <img src="./img/icon-login.svg" alt="Ícone de login" class="container__image">
-        </section>
-        <section class="container__right">
-            <div class="form__card">
-                <img src="./img/logo.svg" alt="Imagem de fundo" class="container__logo">
-                <div class="form__group">
-                    <label for="username" class="form__label">Usuário</label>
-                    <input type="text" id="username" class="form__input">
-                </div>
-                <div class="form__group">
-                    <label for="password" class="form__label">Senha</label>
-                    <input type="password" id="password" class="form__input">
-                </div>
-                <button class="form__button" id="buttonLogin">
-                    ENTRAR
-                </button>
-            </div>
-        </section>
+      <section class="container__left">
+        <p class="container__legend">
+          Pontualidade e eficiência na palma da sua mão!
+        </p>
+        <img
+          src="/assets/img/icon-login.svg"
+          alt="Ícone de login"
+          class="container__image"
+        />
+      </section>
+      <section class="container__right">
+        <div class="form__card">
+          <img
+            src="/assets/img/logo.svg"
+            alt="Imagem de fundo"
+            class="container__logo"
+          />
+          <div class="form__group">
+            <label for="username" class="form__label">Usuário</label>
+            <input type="text" id="username" class="form__input" />
+          </div>
+          <div class="form__group">
+            <label for="password" class="form__label">Senha</label>
+            <input type="password" id="password" class="form__input" />
+          </div>
+          <button
+            id="buttonLogin"
+            data-variant="primary"
+            data-width="100%"
+          >
+            ENTRAR
+          </button>
+        </div>
+      </section>
     </main>
-    <div id="footer"></div>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/components.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-</html>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/src/components/buttonComponent/buttonComponent.js"></script>
+  </body>
 </html>
