@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/src/pages/home/home.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">Single Dot</div>
+  </header>
+  <main>
+    <button class="btn" id="openModal">Abrir Modal</button>
+  </main>
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/src/components/modalComponent/modalComponent.js"></script>
+  <script>
+      $('#openModal').on('click', function() {
+      createModal('success'); // or error
+    });
+  </script>
+</body>
+</html>

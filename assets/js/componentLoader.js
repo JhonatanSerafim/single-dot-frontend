@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return response.text();
       })
       .then(data => {
+        console.log({data});
         document.getElementById(elementId).innerHTML = data;
       })
       .catch(error => {
@@ -16,5 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
   
-  loadComponent('footer', '/components/footer.html');
+  //loadComponent('modalComponent', '/src/components/modalComponent/modalComponent.html');
 });

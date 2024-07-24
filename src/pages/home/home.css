@@ -1,0 +1,28 @@
+body {
+  background-color: #ffffff;
+}
+
+.menu-bar {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(262.47deg, #06d6a0 0%, #037054 100%);
+  border: solid 1px red;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 1.5em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}

@@ -1,12 +1,12 @@
 $(document).ready(function () {
   const variants = {
     primary: {
-      backgroundColor: "#03A078",
+      backgroundColor: "#06D6A0",
       hoverColor: "#028056",
     },
     secondary: {
-      backgroundColor: "red", // Exemplo de cor secundária
-      hoverColor: "darkred", // Exemplo de cor de hover para secundário
+      backgroundColor: "#D61206", 
+      hoverColor: "darkred",
     },
   };
 
@@ -24,7 +24,6 @@ $(document).ready(function () {
   }
 
   function addHoverEffect($button, variant) {
-    if (variant === "primary") {
       $button.hover(
         function () {
           $(this).css("background-color", variants[variant].hoverColor);
@@ -33,7 +32,6 @@ $(document).ready(function () {
           $(this).css("background-color", variants[variant].backgroundColor);
         }
       );
-    }
   }
 
   $("button").each(function () {
@@ -41,9 +39,6 @@ $(document).ready(function () {
     var width = $(this).data("width");
 
     if (!variants[variant]) {
-      alert(
-        "A variante de cor não foi definida corretamente no componente de botão."
-      );
       return;
     }
 
